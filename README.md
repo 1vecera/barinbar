@@ -2,7 +2,7 @@
 
 # barinbar
 
-![barinbar](https://github.com/dvecera/barinbar/blob/main/barinbar.png?raw=true)
+![barinbar](https://github.com/1vecera/barinbar/blob/main/barinbar.png?raw=true)
 
 
 [![PyPI version](https://badge.fury.io/py/barinbar.svg)](https://badge.fury.io/py/barinbar) <!-- Placeholder: Add once published -->
