@@ -1,49 +1,30 @@
 #Please
 [build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
 
-[project]
-
-
-
+[tool.poetry]
 name = "barinbar"
 version = "0.1.0"
 description = "Generate a cool bar in bar chart"
-authors = [
-  { name = "Daniel Vecera", email = "daniel.vecera@outlook.com" },
-]
+authors = ["Daniel Vecera <daniel.vecera@outlook.com>"]
 readme = "README.md"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License"
-]
-requires-python = "~=3.12.0"
+license = "MIT" # Use SPDX identifier
+python = ">=3.10.0" # Renamed from requires-python
+packages = [{include = "barinbar"}] # Tells Poetry to look for the 'barinbar' directory in the root
 
-dependencies = [
-"matplotlib",
-"pandas",
-]
+[tool.poetry.dependencies]
+python = ">=3.10"
+matplotlib = "*" # Use '*' or specify version constraints
+pandas = "*"
 
-[tool.uv]
-default-groups = ["dev"]
-[dependency-groups]
-dev = ["isort", "black[jupyter]", "ruff"]
+[tool.poetry.group.dev.dependencies]
+isort = "*"
+black = {extras = ["jupyter"], version = "*"}
+ruff = "*"
 
 
-[tool.setuptools]
-package-dir = { "" = "barinbar" }
-
-[tool.setuptools.packages.find]
-where = ["barinbar"]
-
-[tool.setuptools.package-data]
-"*" = [
-    "../models/*",
-    "../references/*",
-    "../reports/*"
-]
-
+# Keep existing tool configurations
 [tool.isort]
 profile = "black"
 line_length=120
