@@ -1,32 +1,9 @@
-<!--
 
-I've generated this package as reaction to this post by https://www.linkedin.com/posts/colintombfinancialprofessional_data-dataanalysis-python-activity-7315405292647653378-TsKG
-
-Original Post
-
-
-
-The Best Alternative to Stacked Bar Charts....using Python
-
-After a series of impressive posts, starting with the blog post by Kevin Flerlage, Sebastine Amede and Darragh Murray on how to create this chart type in Tableau, originally architected by Brittany Rosenau, I then came across the always-inspirational Brian Julius, who has re-created this chart utilising R.
-
-I also read a great blog by Daniel Marsh-Patrick, on how to re-create this chart type using Deneb. Thanks Injae Park for pointing this one out.
-
-At this point, I felt the palpable underrepresentation of Python (Plotly) in this arena 😂
-
-
-Original blog post: https://lnkd.in/gxFkKz8f
-Deneb version: https://lnkd.in/gRMk9GtK
-Brian's post: https://lnkd.in/gKhjXEvN
-
-hashtag#data hashtag#dataanalysis hashtag#python hashtag#mavenanalytics
-
-
-This package will end up on pypi.org
-Your task is to generate a good README.md file for this package, using pyproject.toml and plot.py
--->
 
 # barinbar
+
+![barinbar](https://github.com/dvecera/barinbar/blob/main/barinbar.png?raw=true)
+
 
 [![PyPI version](https://badge.fury.io/py/barinbar.svg)](https://badge.fury.io/py/barinbar) <!-- Placeholder: Add once published -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
