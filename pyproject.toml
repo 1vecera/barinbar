@@ -10,18 +10,20 @@ description = "Generate a cool bar in bar chart"
 authors = ["Daniel Vecera <daniel.vecera@outlook.com>"]
 readme = "README.md"
 license = "MIT" # Use SPDX identifier
-python = ">=3.10.0" # Renamed from requires-python
 packages = [{include = "barinbar"}] # Tells Poetry to look for the 'barinbar' directory in the root
 
 [tool.poetry.dependencies]
-python = ">=3.10"
+python = ">=3.10.0"
 matplotlib = "*" # Use '*' or specify version constraints
 pandas = "*"
-
+squarify = "*"
+numpy = "*"
 [tool.poetry.group.dev.dependencies]
 isort = "*"
 black = {extras = ["jupyter"], version = "*"}
 ruff = "*"
+twine = "*"
+
 
 
 # Keep existing tool configurations
@@ -142,7 +144,8 @@ ignore = [
     "TRY003", #try except raise
     "PD013", # use melt instead of stack whereas stack is preferred as multiindex is cool,
     "S301", #allow pickle even if it can be dangerous,
-    "PD015"
+    "PD015",
+    "D205" #missing-blank-line-after-summary - doesn't work properly with splitting lines due to length
 ] #allow magic values]
 
 

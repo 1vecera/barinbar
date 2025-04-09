@@ -11,3 +11,7 @@ wheels/
 uv.lock
 .cursor/
 .gitignore
+.pypirc
+.vscode/launch.json
+linkedin_post.md
+poetry.lock
